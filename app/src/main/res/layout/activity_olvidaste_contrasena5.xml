@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OlvidasteContrasena5">
+
+    <ImageView
+        android:id="@+id/imageButtonVolver"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/transparente"
+        android:contentDescription="@string/volver_a_la_pantalla_anterior"
+        app:layout_constraintEnd_toStartOf="@+id/Logo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_navigate_before" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ecobog" />
+
+    <TextView
+        android:id="@+id/Iniciosesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/reestablece"
+        android:textColor="@color/green"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonVolver" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_background"
+        android:drawableStart="@drawable/vector_email"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/escribe_correo"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Iniciosesion" />
+
+    <EditText
+        android:id="@+id/contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_background"
+        android:drawableStart="@drawable/vector_lock"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/confirma_contrasena"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nueva_contrasena" />
+
+    <EditText
+        android:id="@+id/nueva_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_background"
+        android:drawableStart="@drawable/vector_lock"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/ingresa_contrasena"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+
+    <Button
+        android:id="@+id/buttonReestablecerContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/green"
+        android:drawableEnd="@drawable/vector_navigate_next_white"
+        android:hint="@string/reestablecer_contrasena"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contrasena" />
+
+    <ImageView
+        android:id="@+id/imageViewHojas"
+        android:layout_width="119dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReestablecerContrasena"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/planta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

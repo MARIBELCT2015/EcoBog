@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/logo_ecobog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ecobog" />
+
+    <ImageView
+        android:id="@+id/imageViewProtegiendo"
+        android:layout_width="338dp"
+        android:layout_height="303dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/reciclando"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/protegiendo" />
+
+    <TextView
+        android:id="@+id/textViewGestion"
+        android:layout_width="278dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/conoce"
+        android:textAlignment="center"
+        android:textColor="@color/darkgreen"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProtegiendo" />
+
+    <Button
+        android:id="@+id/buttonSiguiente"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="@color/green"
+        android:drawableEnd="@drawable/vector_navigate_next_white"
+        android:hint="@string/siguiente"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGestion"
+        app:layout_constraintVertical_bias="0.884" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Editar_perfil7">
+
+    <ImageView
+        android:id="@+id/imageButtonVolver"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/transparente"
+        android:contentDescription="@string/volver_a_la_pantalla_anterior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_navigate_before" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ecobog" />
+
+    <ImageView
+        android:id="@+id/imageButtonNotificaciones"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/transparente"
+        android:contentDescription="@string/notificaciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_notifications" />
+
+    <TextView
+        android:id="@+id/textViewUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Editar Perfil"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonVolver" />
+
+    <ImageView
+        android:id="@+id/imageButtonAcount"
+        android:layout_width="100dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/transparente"
+        android:contentDescription="@string/notificaciones"
+        app:layout_constraintEnd_toStartOf="@+id/CambiarFoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewUsuario"
+        app:srcCompat="@drawable/vector_account" />
+
+    <TextView
+        android:id="@+id/CambiarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="44dp"
+        android:text="Sube una Foto o Avatar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsuario" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_background"
+        android:drawableStart="@drawable/vector_person"
+        android:drawablePadding="12dp"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CambiarFoto" />
+
+    <EditText
+        android:id="@+id/Telefono"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_background"
+        android:drawableStart="@drawable/vector_phone"
+        android:drawablePadding="12dp"
+        android:hint="@string/telefono"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombre" />
+
+    <EditText
+        android:id="@+id/Direccion"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_background"
+        android:drawableStart="@drawable/vector_place"
+        android:drawablePadding="12dp"
+        android:hint="@string/act_direccion"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Telefono" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/green"
+        android:drawableEnd="@drawable/vector_navigate_next_white"
+        android:text="@string/Guardar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Direccion" />
+
+    <TextView
+        android:id="@+id/textViewSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="100dp"
+        android:drawableStart="@drawable/vector_logout"
+        android:text="Salir"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
